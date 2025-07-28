@@ -6,9 +6,8 @@ import Navigation from '../../components/Navigation'
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [formData, setFormData] = useState({
-    name: '',
+    fullName: '',
     email: '',
-    subject: '',
     message: ''
   })
 
@@ -19,7 +18,7 @@ export default function ContactPage() {
     // Simulate API call
     setTimeout(() => {
       setIsSubmitting(false)
-      setFormData({ name: '', email: '', subject: '', message: '' })
+      setFormData({ fullName: '', email: '', message: '' })
       alert('Thank you! We\'ll get back to you within 24 hours.')
     }, 1500)
   }
@@ -40,10 +39,10 @@ export default function ContactPage() {
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="heading-xl mb-6 animate-fade-in-up">
-              Get in Touch
+              Let's Build Smarter Systems Together
             </h1>
             <p className="text-body mb-8 max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
-              Ready to scale your coaching business? Let's talk about how we can help.
+              Have questions or ready to get started? Reach out anytime.
             </p>
           </div>
         </div>
@@ -59,52 +58,39 @@ export default function ContactPage() {
                 Send us a message
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-consultcraft-dark-blue mb-2">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-consultcraft-sky focus:outline-none"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-consultcraft-dark-blue mb-2">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-consultcraft-sky focus:outline-none"
-                    />
-                  </div>
-                </div>
-                
                 <div>
                   <label className="block text-sm font-medium text-consultcraft-dark-blue mb-2">
-                    Subject
+                    Full Name *
                   </label>
                   <input
                     type="text"
-                    name="subject"
-                    value={formData.subject}
+                    name="fullName"
+                    value={formData.fullName}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-consultcraft-sky focus:outline-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-consultcraft-sky focus:outline-none transition-colors"
+                    placeholder="Enter your full name"
                   />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium text-consultcraft-dark-blue mb-2">
-                    Message
+                    Email *
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-consultcraft-sky focus:outline-none transition-colors"
+                    placeholder="Enter your email address"
+                  />
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-consultcraft-dark-blue mb-2">
+                    Message *
                   </label>
                   <textarea
                     name="message"
@@ -112,7 +98,7 @@ export default function ContactPage() {
                     onChange={handleInputChange}
                     rows={6}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-consultcraft-sky focus:outline-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-consultcraft-sky focus:outline-none transition-colors resize-none"
                     placeholder="Tell us about your coaching business and how we can help..."
                   />
                 </div>
@@ -127,10 +113,10 @@ export default function ContactPage() {
               </form>
             </div>
 
-            {/* Contact Information */}
+            {/* Direct Contact Info */}
             <div>
               <h2 className="heading-lg mb-6">
-                Contact Information
+                Get in touch directly
               </h2>
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
@@ -142,7 +128,7 @@ export default function ContactPage() {
                       Email
                     </h3>
                     <p className="text-consultcraft-gray">
-                      hello@consultcraft.com
+                      contact@consultcraft.com
                     </p>
                     <p className="text-sm text-consultcraft-light-text">
                       We typically respond within 24 hours
@@ -156,30 +142,30 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-consultcraft-dark-blue mb-2">
-                      Social Media
+                      Instagram
                     </h3>
-                    <p className="text-consultcraft-gray mb-2">
-                      Instagram: @consultcraft
-                    </p>
                     <p className="text-consultcraft-gray">
-                      LinkedIn: ConsultCraft
+                      @consultcraft
+                    </p>
+                    <p className="text-sm text-consultcraft-light-text">
+                      Follow us for updates and tips
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center text-white text-xl">
-                    ⏰
+                    🌍
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-consultcraft-dark-blue mb-2">
-                      Response Time
+                      Location
                     </h3>
                     <p className="text-consultcraft-gray">
-                      Within 24 hours during business days
+                      Remote (Serving Globally)
                     </p>
                     <p className="text-sm text-consultcraft-light-text">
-                      Monday - Friday, 9 AM - 6 PM EST
+                      We work with coaches worldwide
                     </p>
                   </div>
                 </div>
@@ -216,6 +202,27 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Final CTA Section */}
+      <section className="section-padding bg-consultcraft-dark-blue text-white">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              Want to get started faster?
+            </h2>
+            <p className="text-lg text-consultcraft-light-text mb-8">
+              Book a free consultation call and let's discuss how we can automate your coaching business.
+            </p>
+            
+            <a 
+              href="/services#consultation-form" 
+              className="btn-primary inline-block"
+            >
+              Book a Free Consultation
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-consultcraft-dark-blue text-white py-12">
         <div className="container-custom">
@@ -228,8 +235,8 @@ export default function ContactPage() {
               <a href="https://instagram.com/consultcraft" className="text-consultcraft-light-text hover:text-consultcraft-sky transition-colors">
                 Instagram @consultcraft
               </a>
-              <a href="mailto:hello@consultcraft.com" className="text-consultcraft-light-text hover:text-consultcraft-sky transition-colors">
-                hello@consultcraft.com
+              <a href="mailto:contact@consultcraft.com" className="text-consultcraft-light-text hover:text-consultcraft-sky transition-colors">
+                contact@consultcraft.com
               </a>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-700">
