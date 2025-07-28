@@ -3,15 +3,22 @@ import './globals.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'AI Toolkit - ConsultCraft',
-  description: 'The Only AI Toolkit Coaches Need to Scale Smarter. Automate your content, leads, and onboarding in one place — 100% free.',
-  keywords: 'AI toolkit, coaches, automation, content generation, lead tracking, client onboarding',
+  title: 'ConsultCraft | AI-Powered Systems for Coaches',
+  description: 'Scale your coaching business with AI-based systems and automation.',
+  keywords: 'AI automation, coaching business, CRM, Notion, Zapier, systems, automation',
   authors: [{ name: 'Yash Darji' }],
   openGraph: {
-    title: 'AI Toolkit - ConsultCraft',
-    description: 'The Only AI Toolkit Coaches Need to Scale Smarter',
+    title: 'ConsultCraft | AI-Powered Systems for Coaches',
+    description: 'Scale your coaching business with AI-based systems and automation.',
     type: 'website',
+    url: 'https://consultcraft-site.vercel.app/',
+    siteName: 'ConsultCraft',
   },
+  icons: {
+    icon: '/favicon.ico',
+  },
+  viewport: 'width=device-width, initial-scale=1.0',
+  robots: 'index, follow',
 }
 
 export default function RootLayout({
@@ -21,6 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className="bg-consultcraft-light-gray">
         {children}
       </body>

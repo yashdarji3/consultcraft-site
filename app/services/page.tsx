@@ -66,24 +66,24 @@ export default function ServicesPage() {
   return (
     <>
       <Head>
-        <title>Our Services | Automations for Coaches | ConsultCraft</title>
-        <meta name="description" content="We set up done-for-you AI automations, client CRMs, and ongoing support to scale your business." />
+        <title>Our Services | ConsultCraft</title>
+        <meta name="description" content="Done-for-you automation and CRM setups for coaches." />
         <meta name="keywords" content="AI automation services, coaching business automation, Notion CRM, Zapier automation, client onboarding" />
         <meta name="author" content="Yash Darji" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Done-for-You AI Services for Coaches" />
-        <meta property="og:description" content="We set up done-for-you AI automations, client CRMs, and ongoing support to scale your business." />
+        <meta property="og:title" content="Our Services | ConsultCraft" />
+        <meta property="og:description" content="Done-for-you automation and CRM setups for coaches." />
         <meta property="og:url" content="https://consultcraft-site.vercel.app/services" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://consultcraft-site.vercel.app/og-services.png" />
+        <meta property="og:image" content="/og-services.png" />
         <meta property="og:site_name" content="ConsultCraft" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Done-for-You AI Services for Coaches" />
-        <meta name="twitter:description" content="We set up done-for-you AI automations, client CRMs, and ongoing support to scale your business." />
-        <meta name="twitter:image" content="https://consultcraft-site.vercel.app/og-services.png" />
+        <meta name="twitter:title" content="Our Services | ConsultCraft" />
+        <meta name="twitter:description" content="Done-for-you automation and CRM setups for coaches." />
+        <meta name="twitter:image" content="/og-services.png" />
         
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />

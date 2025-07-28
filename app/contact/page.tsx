@@ -32,24 +32,24 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>Contact Us | ConsultCraft</title>
-        <meta name="description" content="Reach out to ConsultCraft to book a consultation or ask questions about AI automation for coaches." />
+        <title>Contact ConsultCraft</title>
+        <meta name="description" content="Book a consult or send us a message." />
         <meta name="keywords" content="contact ConsultCraft, consultation booking, AI automation consultation, coaching business help" />
         <meta name="author" content="Yash Darji" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Contact ConsultCraft" />
-        <meta property="og:description" content="Reach out to ConsultCraft to book a consultation or ask questions about AI automation for coaches." />
+        <meta property="og:description" content="Book a consult or send us a message." />
         <meta property="og:url" content="https://consultcraft-site.vercel.app/contact" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://consultcraft-site.vercel.app/og-contact.png" />
+        <meta property="og:image" content="/og-contact.png" />
         <meta property="og:site_name" content="ConsultCraft" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact ConsultCraft" />
-        <meta name="twitter:description" content="Reach out to ConsultCraft to book a consultation or ask questions about AI automation for coaches." />
-        <meta name="twitter:image" content="https://consultcraft-site.vercel.app/og-contact.png" />
+        <meta name="twitter:description" content="Book a consult or send us a message." />
+        <meta name="twitter:image" content="/og-contact.png" />
         
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />

@@ -16,23 +16,23 @@ export default function HomePage() {
     <>
       <Head>
         <title>ConsultCraft | AI-Powered Systems for Coaches</title>
-        <meta name="description" content="Scale your coaching business with AI-based systems and automation. Done-for-you workflows, CRM dashboards, and more." />
+        <meta name="description" content="Scale your coaching business with AI-based systems and automation." />
         <meta name="keywords" content="AI automation, coaching business, CRM, Notion, Zapier, systems, automation" />
         <meta name="author" content="Yash Darji" />
         
         {/* Open Graph */}
         <meta property="og:title" content="ConsultCraft | AI-Powered Systems for Coaches" />
-        <meta property="og:description" content="Scale your coaching business with AI-based systems and automation. Done-for-you workflows, CRM dashboards, and more." />
+        <meta property="og:description" content="Scale your coaching business with AI-based systems and automation." />
         <meta property="og:url" content="https://consultcraft-site.vercel.app/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://consultcraft-site.vercel.app/og-home.png" />
+        <meta property="og:image" content="/og-home.png" />
         <meta property="og:site_name" content="ConsultCraft" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="ConsultCraft | AI-Powered Systems for Coaches" />
         <meta name="twitter:description" content="Scale your coaching business with AI-based systems and automation." />
-        <meta name="twitter:image" content="https://consultcraft-site.vercel.app/og-home.png" />
+        <meta name="twitter:image" content="/og-home.png" />
         
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />

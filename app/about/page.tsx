@@ -8,23 +8,23 @@ export default function AboutPage() {
     <>
       <Head>
         <title>About ConsultCraft | Yash Darji</title>
-        <meta name="description" content="Meet Yash Darji and the story behind ConsultCraft. Learn why we help coaches automate and grow with smart systems." />
+        <meta name="description" content="The story behind ConsultCraft and our founder." />
         <meta name="keywords" content="Yash Darji, ConsultCraft founder, coaching automation, AI systems, business automation" />
         <meta name="author" content="Yash Darji" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="About Yash Darji | ConsultCraft" />
-        <meta property="og:description" content="Meet Yash Darji and the story behind ConsultCraft. Learn why we help coaches automate and grow with smart systems." />
+        <meta property="og:title" content="About ConsultCraft | Yash Darji" />
+        <meta property="og:description" content="The story behind ConsultCraft and our founder." />
         <meta property="og:url" content="https://consultcraft-site.vercel.app/about" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://consultcraft-site.vercel.app/og-about.png" />
+        <meta property="og:image" content="/og-about.png" />
         <meta property="og:site_name" content="ConsultCraft" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Yash Darji | ConsultCraft" />
-        <meta name="twitter:description" content="Meet Yash Darji and the story behind ConsultCraft. Learn why we help coaches automate and grow with smart systems." />
-        <meta name="twitter:image" content="https://consultcraft-site.vercel.app/og-about.png" />
+        <meta name="twitter:title" content="About ConsultCraft | Yash Darji" />
+        <meta name="twitter:description" content="The story behind ConsultCraft and our founder." />
+        <meta name="twitter:image" content="/og-about.png" />
         
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />

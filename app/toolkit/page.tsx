@@ -57,23 +57,23 @@ export default function ToolkitPage() {
     <>
       <Head>
         <title>Free AI Toolkit for Coaches | ConsultCraft</title>
-        <meta name="description" content="Download our free toolkit — the exact automations, dashboards, and AI tools we use to scale coaching businesses." />
+        <meta name="description" content="Download the same AI tools and dashboards we use to scale." />
         <meta name="keywords" content="free toolkit, AI automation, coaching tools, Notion dashboard, CRM, lead tracking" />
         <meta name="author" content="Yash Darji" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Free AI Toolkit for Coaches" />
-        <meta property="og:description" content="Download our free toolkit — the exact automations, dashboards, and AI tools we use to scale coaching businesses." />
+        <meta property="og:title" content="Free AI Toolkit for Coaches | ConsultCraft" />
+        <meta property="og:description" content="Download the same AI tools and dashboards we use to scale." />
         <meta property="og:url" content="https://consultcraft-site.vercel.app/toolkit" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://consultcraft-site.vercel.app/og-toolkit.png" />
+        <meta property="og:image" content="/og-toolkit.png" />
         <meta property="og:site_name" content="ConsultCraft" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Free AI Toolkit for Coaches" />
-        <meta name="twitter:description" content="Download our free toolkit — the exact automations, dashboards, and AI tools we use to scale coaching businesses." />
-        <meta name="twitter:image" content="https://consultcraft-site.vercel.app/og-toolkit.png" />
+        <meta name="twitter:title" content="Free AI Toolkit for Coaches | ConsultCraft" />
+        <meta name="twitter:description" content="Download the same AI tools and dashboards we use to scale." />
+        <meta name="twitter:image" content="/og-toolkit.png" />
         
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
