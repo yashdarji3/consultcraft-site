@@ -18,8 +18,8 @@ export default function Footer() {
             </a>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-700">
-            <p className="text-sm text-consultcraft-light-text">
-              © 2024 ConsultCraft. All rights reserved.
+            <p className="text-sm text-gray-400 text-center">
+              © 2025 ConsultCraft. All rights reserved.
             </p>
           </div>
         </div>

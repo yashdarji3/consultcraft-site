@@ -18,15 +18,30 @@ export default function ContactPage() {
     setFormData(prev => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    // Simulate API call
-    setTimeout(() => {
+    
+    try {
+      const response = await fetch('https://formspree.io/f/yourFormID', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setFormData({ fullName: '', email: '', message: '' })
+        alert('Thank you! We\'ll get back to you within 24 hours.')
+      } else {
+        alert('There was an error sending your message. Please try again.')
+      }
+    } catch (error) {
+      alert('There was an error sending your message. Please try again.')
+    } finally {
       setIsSubmitting(false)
-      setFormData({ fullName: '', email: '', message: '' })
-      alert('Thank you! We\'ll get back to you within 24 hours.')
-    }, 1500)
+    }
   }
 
   return (
@@ -85,7 +100,7 @@ export default function ContactPage() {
               <h2 className="heading-lg mb-6">
                 Send us a message
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form action="https://formspree.io/f/yourFormID" method="POST" onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium text-consultcraft-dark-blue mb-2">
                     Full Name *
