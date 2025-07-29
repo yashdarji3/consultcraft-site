@@ -12,12 +12,26 @@ export default function ToolkitPage() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate API call
-    setTimeout(() => {
+    try {
+      const response = await fetch('https://formspree.io/f/yourFormID', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      })
+
+      if (response.ok) {
+        setEmail('')
+        alert('Thank you! Check your email for the toolkit.')
+      } else {
+        alert('There was an error. Please try again.')
+      }
+    } catch (error) {
+      alert('There was an error. Please try again.')
+    } finally {
       setIsSubmitting(false)
-      setEmail('')
-      alert('Thank you! Check your email for the toolkit.')
-    }, 1500)
+    }
   }
 
   const toolkitFeatures = [
@@ -58,30 +72,10 @@ export default function ToolkitPage() {
       <Head>
         <title>Free AI Toolkit for Coaches | ConsultCraft</title>
         <meta name="description" content="Download the same AI tools and dashboards we use to scale." />
-        <meta name="keywords" content="free toolkit, AI automation, coaching tools, Notion dashboard, CRM, lead tracking" />
-        <meta name="author" content="Yash Darji" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Free AI Toolkit for Coaches | ConsultCraft" />
+        <meta property="og:title" content="Free AI Toolkit for Coaches" />
         <meta property="og:description" content="Download the same AI tools and dashboards we use to scale." />
         <meta property="og:url" content="https://consultcraft-site.vercel.app/toolkit" />
-        <meta property="og:type" content="website" />
         <meta property="og:image" content="/og-toolkit.png" />
-        <meta property="og:site_name" content="ConsultCraft" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Free AI Toolkit for Coaches | ConsultCraft" />
-        <meta name="twitter:description" content="Download the same AI tools and dashboards we use to scale." />
-        <meta name="twitter:image" content="/og-toolkit.png" />
-        
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
-        
-        {/* Additional Meta Tags */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://consultcraft-site.vercel.app/toolkit" />
       </Head>
       
       <div className="min-h-screen">
@@ -198,8 +192,8 @@ export default function ToolkitPage() {
                 </a>
               </div>
               <div className="mt-8 pt-8 border-t border-gray-700">
-                <p className="text-sm text-consultcraft-light-text">
-                  © 2024 ConsultCraft. All rights reserved.
+                <p className="text-sm text-gray-400 text-center">
+                  © 2025 ConsultCraft. All rights reserved.
                 </p>
               </div>
             </div>
