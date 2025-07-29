@@ -17,7 +17,7 @@ export default function Contact() {
     setIsSubmitting(true)
     
     try {
-      const response = await fetch('https://formspree.io/f/your_form_id', {
+      const response = await fetch('https://formspree.io/f/xwpqbwzp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
